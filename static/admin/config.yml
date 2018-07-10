@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: daneasterman/netlify-cms
   branch: master
 
 media_folder: static/img
