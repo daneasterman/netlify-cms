@@ -1,21 +1,27 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-$dan-purple: #15395d
-$dan-purple-invert: #fff
+$dan: #15395d
+$dan-invert: #fff
 
-$primary: $dan-purple
-$primary-invert: $dan-purple-invert
+$primary: $dan
+$primary-invert: $dan-invert
 
 $body-size: 18px
+$section-padding: 1rem 1.5rem
 
 .brand-title 
   font-size: 1.5rem
-  font-weight: 600  
+  font-weight: 600
+  color: $primary!important
+
+.navbar-item:hover
+  color: $primary!important
 
 .page-title
   color: #4a4a4a!important
-  font-size: 1.8rem
+  font-size: 1.7rem!important
+  padding-bottom: 2rem!important
 
 .blog-link
   font-weight: 500
@@ -23,6 +29,22 @@ $body-size: 18px
 
 .blog-button
   font-size: 0.875rem!important
+
+.profile
+  padding-bottom: 2rem
+
+// img
+//  
+//   border: 7px solid #fff
+
+.img-circle
+  border-radius: 50%
+
+.img-responsive
+  margin: 0 auto
+  display: block  
+  max-width: 33.33333333%
+  height: auto
 
 .content .taglist
   list-style: none

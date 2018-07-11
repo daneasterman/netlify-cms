@@ -10,38 +10,38 @@ export default class IndexPage extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <div className="content">
+          <div className="column is-10 is-offset-1">
             <h1 className="page-title">Latest Blog Posts</h1>
+            {posts.map(({ node: post }) => (
+              <div
+                className="content"
+                style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
+                key={post.id}
+              >
+                <p>
+                  <Link
+                    className="blog-link has-text-primary"
+                    to={post.fields.slug}
+                  >
+                    {post.frontmatter.title}
+                  </Link>
+                  <span> &bull; </span>
+                  <small>{post.frontmatter.date}</small>
+                </p>
+                <p className="blog-excerpt">
+                  {post.excerpt}
+                  <br />
+                  <br />
+                  <Link
+                    className="button is-small blog-button"
+                    to={post.fields.slug}
+                  >
+                    Keep Reading →
+                  </Link>
+                </p>
+              </div>
+            ))}
           </div>
-          {posts.map(({ node: post }) => (
-            <div
-              className="content"
-              style={{ border: "1px solid #eaecee", padding: "2em 4em" }}
-              key={post.id}
-            >
-              <p>
-                <Link
-                  className="blog-link has-text-primary"
-                  to={post.fields.slug}
-                >
-                  {post.frontmatter.title}
-                </Link>
-                <span> &bull; </span>
-                <small>{post.frontmatter.date}</small>
-              </p>
-              <p className="blog-excerpt">
-                {post.excerpt}
-                <br />
-                <br />
-                <Link
-                  className="button is-small blog-button"
-                  to={post.fields.slug}
-                >
-                  Keep Reading →
-                </Link>
-              </p>
-            </div>
-          ))}
         </div>
       </section>
     );

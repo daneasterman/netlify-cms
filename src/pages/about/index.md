@@ -1,19 +1,19 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About our values
+title: About
 ---
-### Shade-grown coffee
-Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.
 
-### Single origin
-Single-origin coffee is coffee grown within a single known geographic origin. Sometimes, this is a single farm or a specific collection of beans from a single country. The name of the coffee is then usually the place it was grown to whatever degree available.
+I am a Frontend Web Developer and Product Engineer specialising primarily in React, Javascript and CSS3. I am interested in a number of emerging technologies such as machine learning and blockchain / cryptocurrency trading, however my core interest is virtual reality on the web (webVR).
 
-### Sustainable farming
-Sustainable agriculture is farming in sustainable ways based on an understanding of ecosystem services, the study of relationships between organisms and their environment. What grows where and how it is grown are a matter of choice and careful consideration for nature and communities.
+This blog will also feature the regular posting of new interactive timelines built with timelineJS on a number of wide-ranging historical periods.
 
-### Direct sourcing
-Direct trade is a form of sourcing practiced by some coffee roasters. Advocates of direct trade practices promote direct communication and price negotiation between buyer and farmer, along with systems that encourage and incentivize quality.
+Before deciding to switch careers to technology and web development, I was a reporter in London, and worked
+as a freelance journalist in Israel and the West Bank.
 
-### Reinvest profits
-We want to truly empower the communities that bring amazing coffee to you. That’s why we reinvest 20% of our profits into farms, local businesses and schools everywhere our coffee is grown. You can see the communities grow and learn more about coffee farming on our blog.
+In 2013 I was nominated for the BBC Student Innovation Award as a result of my work on "Drone Journalism".
+
+Check back here for regular updates on webVR and new timelines on a number of wide-ranging historical periods
+and subjects.
+
+This blog was built with Gatsby JS and Netlify, a new blogging system which incorporates two popular web technologies - React and Graphql. Gatsby JS generates fast and lightweight "static" pages while Netlify provides a clean and intuitive CMS user interface for non-technical users.

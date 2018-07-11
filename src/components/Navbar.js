@@ -7,7 +7,9 @@ const Navbar = () => (
   <nav className="navbar is-transparent">
     <div className="container">
       <div className="navbar-start">
-        <h1 className="navbar-item brand-title">Daniel Easterman</h1>
+        <Link className="navbar-item brand-title" to="/about">
+          Daniel Easterman
+        </Link>
       </div>
       <div className="navbar-end">
         <Link className="navbar-item" to="/">
