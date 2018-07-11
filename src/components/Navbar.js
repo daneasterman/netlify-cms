@@ -6,19 +6,16 @@ import github from "../img/github-icon.svg";
 const Navbar = () => (
   <nav className="navbar is-transparent">
     <div className="container">
-      <div className="navbar-brand">
-        <figure className="image" />
-        {/* INSERT TITLE TEXT HERE */}
-      </div>
       <div className="navbar-start">
+        <h1 className="navbar-item brand-title">Daniel Easterman</h1>
+      </div>
+      <div className="navbar-end">
+        <Link className="navbar-item" to="/">
+          Blog
+        </Link>
         <Link className="navbar-item" to="/about">
           About
         </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
         <a
           className="navbar-item"
           href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
