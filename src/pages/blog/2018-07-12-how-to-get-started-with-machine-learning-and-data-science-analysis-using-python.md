@@ -47,7 +47,7 @@ For more info or fancier installation solutions with Linux, a Mac package manage
 [https://www.scipy.org/install.html](https://www.scipy.org/install.html)
 
 
-#### The Pandas Library :panda_face:
+### The Pandas Library
 
 *__What Does Pandas Do?__* 
 
