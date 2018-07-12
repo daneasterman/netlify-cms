@@ -13,9 +13,9 @@ tags:
   - python
   - machine learning
   - data science
-  - ''
 ---
-In this article we will be looking at the classic Iris flower dataset, which is widely considered to be the fundamental "hello world" example to demonstrate data science and machine learning concepts with the Python programming language. 
+
+In this article we will be looking at the classic Iris flower dataset, which is widely considered to be the fundamental "hello world" example to demonstrate data science and machine learning concepts with the Python programming language.
 
 This provides an explanation behind the `iris-final.py` which incorporates the main machine learning code snippets outlined below. If you get stuck at any point, the full completed script can be found in my github repository: [https://github.com/daneasterman/python-iris-machine-learning](https://github.com/daneasterman/python-iris-machine-learning)
 
@@ -23,11 +23,11 @@ But, I would recommend working through all the following steps to gain a better 
 
 The main structure of this tutorial looks at three main Python libraries to get started with basic Data Science and Machine Learning:
 
-1. Pandas
-2. Matplotlib
-3. Scikit-Learn
+1.  Pandas
+2.  Matplotlib
+3.  Scikit-Learn
 
-*__Installation / setup basics__*
+_**Installation / setup basics**_
 
 This tutorial assumes you are working on a Mac with Python 2.7 pre-installed. Check your python version in the terminal with: `python --version`
 
@@ -40,20 +40,19 @@ sudo easy_install pip
 Then in Mac you want to run this command which installs Pandas, Matplotlib and SciKit-Learn all in one go ( N.B: you need numpy and scipy as dependencies for sklearn):
 
 ```
-python -m pip install --user numpy scipy pandas matplotlib sklearn 
+python -m pip install --user numpy scipy pandas matplotlib sklearn
 ```
 
 For more info or fancier installation solutions with Linux, a Mac package manager or Windows, please refer to this excellent resource:
 [https://www.scipy.org/install.html](https://www.scipy.org/install.html)
 
-
 ### The Pandas Library
 
-*__What Does Pandas Do?__* 
+_**What Does Pandas Do?**_
 
 Pandas offers a number of easy-to-use methods or operations to manually view, analyse and understand data in the mould of a traditional data scientist. This is an important step before applying any automated machine learning techniques.
 
-*__Key Examples__*
+_**Key Examples**_
 
 If working in the Python "interpreter" (simply type `python` to access this) within your terminal, the first thing you need to do is import the Pandas libraries and declare basic variables such as `url`, `names` and `dataset`:
 
@@ -118,7 +117,7 @@ min        4.300000     2.000000      1.000000     0.100000
 max        7.900000     4.400000      6.900000     2.500000
 ```
 
-###  Matplotlib and Data Visualisation
+### Matplotlib and Data Visualisation
 
 The Matplotlib official website describes the software as a "Python 2D plotting library". In other words it allows us to create simple data "visualisations" or graphs/charts of our data.
 
@@ -149,7 +148,7 @@ Scikit-Learn is a very well-established open source machine learning library (10
 
 In other words, we will train the algorithm to "learn" or categorise the correct flower species based on the the petal and sepal measurements of a particular data entry.
 
-*__Assessing which Machine learning algorithm to use:__*
+_**Assessing which Machine learning algorithm to use:**_
 
 Due to the added complexity, at this point I would recommend moving away from working in Python interepreter and putting your code in a simple code editor such as Sublime and then running the individual file instead of each line of code.
 
@@ -228,7 +227,7 @@ SVM: 0.991667 (0.025000)
 
 Here we can see that with a score of `0.983333`, the K-Nearest Neighbors (KNN) algorithm has performed the best and most accurately on our Iris flower dataset.
 
-*__Making an actual prediction with Machine Learning:__*
+_**Making an actual prediction with Machine Learning:**_
 
 Now that we know that KNN is the most accurate algorithm, we can run it exclusively on the data with the code below:
 
@@ -243,8 +242,7 @@ print(classification_report(Y_validation, predictions))
 
 This generates a final average accuracy score of 0.9 (90%) and a classification report breaking down the level of precision or accuracy for each flower species:
 
-```                 precision    recall  f1-score   support
-
+```precision    recall  f1-score   support
     Iris-setosa       1.00      1.00      1.00         7
 Iris-versicolor       0.85      0.92      0.88        12
  Iris-virginica       0.90      0.82      0.86        11
@@ -265,6 +263,3 @@ The following resources were invaluable to me in preparing this article on Pytho
 [https://www.scipy.org/install.html](https://www.scipy.org/install.html)
 
 [http://www.codeastar.com/beginner-data-science-tutorial/](http://www.codeastar.com/beginner-data-science-tutorial/)
-
-
-
