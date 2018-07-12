@@ -9,6 +9,7 @@ $primary-invert: $dan-invert
 
 $body-size: 18px
 $section-padding: 1rem 1.5rem
+$link: $primary
 
 .brand-title 
   font-size: 1.5rem
@@ -18,12 +19,17 @@ $section-padding: 1rem 1.5rem
 .navbar-item:hover
   color: $primary!important
 
-.page-title
+.blog-list-title
   color: #4a4a4a!important
   font-size: 1.7rem!important
   padding-bottom: 2rem!important
 
-.about-page-title
+.blog-title
+  color: #4a4a4a!important
+  font-size: 1.7rem!important
+  padding-bottom: 1rem
+
+.about-title
   font-size: 2rem!important
   padding-bottom: 1rem!important
 
@@ -40,9 +46,6 @@ $section-padding: 1rem 1.5rem
 
 .profile
   padding-bottom: 2rem
-
-// img
-//   border: 7px solid #fff
 
 .img-circle
   border-radius: 50%
@@ -67,6 +70,8 @@ $section-padding: 1rem 1.5rem
     padding: 0 2rem 1rem 0
     margin-bottom: 1.5rem
     margin-top: 0
+    a
+      font-weight: bold
 
 // Helper Classes
 .full-width-image-container

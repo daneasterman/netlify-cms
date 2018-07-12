@@ -11,7 +11,7 @@ export default class IndexPage extends React.Component {
       <section className="section">
         <div className="container">
           <div className="column is-10 is-offset-1">
-            <h1 className="page-title">Latest Blog Posts</h1>
+            <h1 className="blog-list-title">Latest Blog Posts</h1>
             {posts.map(({ node: post }) => (
               <div
                 className="content"
