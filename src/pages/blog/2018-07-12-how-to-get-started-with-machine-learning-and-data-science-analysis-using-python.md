@@ -9,6 +9,11 @@ tags:
   - machine learning
   - data science
 ---
+
+<script data-inline-script="data-inline-script">
+    console.log("daniel, this works");
+</script>
+
 In this article we will be looking at the classic Iris flower dataset, which is widely considered to be the fundamental "hello world" example to demonstrate data science and machine learning concepts with Python, a major programming language.
 
 This provides an explanation behind the `iris-final.py` which incorporates the main machine learning code snippets outlined below. If you get stuck at any point, the full completed script can be found in my github repository: [https://github.com/daneasterman/python-iris-machine-learning](https://github.com/daneasterman/python-iris-machine-learning)
