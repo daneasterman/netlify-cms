@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: >-
-  How to get started with machine learning and data science using
+  How to get started with Machine Learning and Data Science using
   Python?
 date: '2018-07-12T19:00:31+01:00'
 tags:
