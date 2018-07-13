@@ -12,8 +12,6 @@ if (process.env.NODE_ENV === `production`) {
 module.exports = class HTML extends React.Component {
   render() {
     let css;
-    let js =
-      '<script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>';
     if (process.env.NODE_ENV === `production`) {
       css = (
         <style
@@ -33,7 +31,6 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
-          <script dangerouslySetInnerHTML={{ __html: js }} />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}

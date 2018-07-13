@@ -17,7 +17,14 @@ export const BlogPostTemplate = ({
 
   return (
     <section className="section">
-      {helmet || ""}
+      <Helmet>
+        <link
+          title="timeline-styles"
+          rel="stylesheet"
+          href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
+        />
+        <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js" />
+      </Helmet>
       <div className="container content">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -61,7 +68,6 @@ const BlogPost = ({ data }) => {
       content={post.html}
       contentComponent={HTMLContent}
       description={post.frontmatter.description}
-      helmet={<Helmet title={`${post.frontmatter.title} | Blog`} />}
       tags={post.frontmatter.tags}
       title={post.frontmatter.title}
     />
