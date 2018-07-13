@@ -1,21 +1,15 @@
 ---
 templateKey: blog-post
 title: >-
-  How to get started with machine learning and data science analysis using
-  python?
+  How to get started with machine learning and data science using
+  Python?
 date: '2018-07-12T19:00:31+01:00'
-description: >-
-  In this article we will be looking at the classic Iris flower dataset, which
-  is widely considered to be the fundamental "hello world" example to
-  demonstrate data science and machine learning concepts with the Python, a
-  major programming language.
 tags:
   - python
   - machine learning
   - data science
 ---
-
-In this article we will be looking at the classic Iris flower dataset, which is widely considered to be the fundamental "hello world" example to demonstrate data science and machine learning concepts with the Python programming language.
+In this article we will be looking at the classic Iris flower dataset, which is widely considered to be the fundamental "hello world" example to demonstrate data science and machine learning concepts with Python, a major programming language.
 
 This provides an explanation behind the `iris-final.py` which incorporates the main machine learning code snippets outlined below. If you get stuck at any point, the full completed script can be found in my github repository: [https://github.com/daneasterman/python-iris-machine-learning](https://github.com/daneasterman/python-iris-machine-learning)
 
