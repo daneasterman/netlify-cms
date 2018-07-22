@@ -31,6 +31,8 @@ module.exports = class HTML extends React.Component {
           />
           {this.props.headComponents}
           {css}
+          {/* This works: */}
+          {/* <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js" />         */}
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
