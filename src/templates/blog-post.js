@@ -6,29 +6,32 @@ import Link from "gatsby-link";
 import Content, { HTMLContent } from "../components/Content";
 import Script from "react-load-script";
 
-// Try this after react-load-script tag solution.
-
-// function loadJS(src) {
-//   var ref = window.document.getElementsByTagName("script")[0];
-//   var script = window.document.createElement("script");
-//   script.src = src;
-//   script.async = true;
-//   ref.parentNode.insertBefore(script, ref);
-// }
-
 class BlogPostTemplate extends React.Component {
   constructor(props) {
     super(props);    
   }
 
-  displayTimeline() {
+  // componentDidMount() {
+  //   const timelineID = document.getElementById('timelineID');
+
+  //   const timeline = new TL.Timeline(timelineID, "../../data/england.json");
+  //   window.onresize = function(event) {
+  //     timeline.updateDisplay();
+  //   };
+  // }
+
+  createTimeline() {
     const timelineID = document.getElementById('timelineID');
 
     const timeline = new TL.Timeline(timelineID, "../../data/england.json");
     window.onresize = function(event) {
       timeline.updateDisplay();
-    };
+    }; 
+  }
 
+  componentWillUnmount() {
+    var elem = document.querySelector('#timelineID');
+    elem.parentNode.removeChild(elem);
   }
 
   render() {
@@ -53,8 +56,8 @@ class BlogPostTemplate extends React.Component {
           />
         </Helmet>
         <Script
-          url="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"          
-          onLoad={this.displayTimeline.bind(this)}
+          url="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"       
+          onCreate={this.createTimeline.bind(this)}
         />
         <div className="container content">
           <div className="columns">
@@ -64,7 +67,7 @@ class BlogPostTemplate extends React.Component {
                 <p>{description}</p>
 
                 <PostContent content={content} />
-                <div id="timelineID" style={{ height: "100%", width: "100%" }} />
+                {/* <div id="timelineID" style={{ height: "100%", width: "100%" }} /> */}
                 {tags && tags.length ? (
                   <div style={{ marginTop: `4rem` }}>
                     <h4>Tags</h4>
