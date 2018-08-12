@@ -4,30 +4,20 @@ import { kebabCase } from "lodash";
 import Helmet from "react-helmet";
 import Link from "gatsby-link";
 import Content, { HTMLContent } from "../components/Content";
-import Script from "react-load-script";
 
 class BlogPostTemplate extends React.Component {
   constructor(props) {
     super(props);    
   }
 
-  // componentDidMount() {
-  //   const timelineID = document.getElementById('timelineID');
+  // Key Timeline JS proprietary code:
+  // https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js
+  // const timelineID = document.getElementById('timelineID');
 
   //   const timeline = new TL.Timeline(timelineID, "../../data/england.json");
   //   window.onresize = function(event) {
   //     timeline.updateDisplay();
   //   };
-  // }
-
-  createTimeline() {
-    const timelineID = document.getElementById('timelineID');
-
-    const timeline = new TL.Timeline(timelineID, "../../data/england.json");
-    window.onresize = function(event) {
-      timeline.updateDisplay();
-    }; 
-  }
 
   componentWillUnmount() {
     var elem = document.querySelector('#timelineID');
@@ -54,11 +44,7 @@ class BlogPostTemplate extends React.Component {
             rel="stylesheet"
             href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css"
           />
-        </Helmet>
-        <Script
-          url="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"       
-          onCreate={this.createTimeline.bind(this)}
-        />
+        </Helmet>        
         <div className="container content">
           <div className="columns">
             <div className="column is-10 is-offset-1">
@@ -66,8 +52,7 @@ class BlogPostTemplate extends React.Component {
                 <h1 className="blog-title">{title}</h1>
                 <p>{description}</p>
 
-                <PostContent content={content} />
-                {/* <div id="timelineID" style={{ height: "100%", width: "100%" }} /> */}
+                <PostContent content={content} />                
                 {tags && tags.length ? (
                   <div style={{ marginTop: `4rem` }}>
                     <h4>Tags</h4>
