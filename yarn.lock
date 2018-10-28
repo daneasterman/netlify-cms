@@ -2836,6 +2836,10 @@ dotenv@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-4.0.0.tgz#864ef1379aced55ce6f95debecdce179f7a0cd1d"
 
+dotenv@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-6.0.0.tgz#24e37c041741c5f4b25324958ebbc34bca965935"
+
 download@^4.0.0, download@^4.1.2:
   version "4.4.3"
   resolved "https://registry.yarnpkg.com/download/-/download-4.4.3.tgz#aa55fdad392d95d4b68e8c2be03e0c2aa21ba9ac"
@@ -4686,6 +4690,10 @@ hoek@2.x.x:
 hoek@4.x.x:
   version "4.2.1"
   resolved "https://registry.yarnpkg.com/hoek/-/hoek-4.2.1.tgz#9634502aa12c445dd5a7c5734b572bb8738aacbb"
+
+hoist-non-react-statics@^1.0.3:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
 
 hoist-non-react-statics@^2.1.0, hoist-non-react-statics@^2.5.0:
   version "2.5.5"
@@ -8186,6 +8194,12 @@ react-aria-menubutton@^5.1.0:
     focus-group "^0.3.1"
     prop-types "^15.6.0"
     teeny-tap "^0.2.0"
+
+react-async-script-loader@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/react-async-script-loader/-/react-async-script-loader-0.3.0.tgz#c742b3ca25e08ba61ab7eb64371f814027692b86"
+  dependencies:
+    hoist-non-react-statics "^1.0.3"
 
 react-autosuggest@^9.3.2:
   version "9.3.4"

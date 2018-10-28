@@ -2,6 +2,10 @@ const _ = require('lodash')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
 
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators
 
@@ -21,7 +25,7 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
           }
         }
       }
-    }
+    } 
   `).then(result => {
     if (result.errors) {
       result.errors.forEach(e => console.error(e.toString()))

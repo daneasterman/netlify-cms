@@ -10,7 +10,6 @@ tags:
 Some text for this timeline
 
 <!-- <div style={{height: '100%'; width: '100%'}} id="timeline"></div> -->
-<div id="timelineID" style="height: 100%, width: 100%" }} />
 
 <!-- <script type="text/javascript" data-inline-script="data-inline-script">
 

@@ -5,6 +5,7 @@
   "author": "Austin Green",
   "dependencies": {
     "bulma": "^0.6.0",
+    "dotenv": "^6.0.0",
     "gatsby": "^1.9.213",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-netlify": "^1.0.19",
@@ -21,6 +22,7 @@
     "netlify-cms": "^1.7.0",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
+    "react-async-script-loader": "^0.3.0",
     "react-helmet": "^5.2.0",
     "react-load-script": "^0.0.6",
     "uuid": "^3.2.1"
